@@ -11,6 +11,6 @@ public interface BookRepository extends JpaRepository<Book, Long> {
 
     Optional<Book> findByTitle(String title);
 
-    @Query(value = "Select * from book_db.book where category_id = :categoryId ", nativeQuery = true)
+    @Query(value = "Select * from book where category_id = :categoryId ", nativeQuery = true)
     List<Book> findBooksByCategoryId(Long categoryId);
 }

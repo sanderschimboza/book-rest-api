@@ -2,16 +2,20 @@ server:
     port: 8080
 
 spring:
-    datasource:
-        driver-class-name: com.mysql.cj.jdbc.Driver
-        password: Kunashe23@
-        url: jdbc:mysql://localhost:3306/book_db
-        username: root
-    jpa:
-        generate-ddl: true
-        hibernate:
-            ddl-auto: create
-        show-sql: true
+  datasource:
+    initialization-mode: always
+    username: sanders
+    url: jdbc:postgresql://localhost:5432/demodb
+    platform: postgres
+    password: Kunashe23@
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: 'true'
+    hibernate:
+      ddl-auto: create
 
 narration:
      book:

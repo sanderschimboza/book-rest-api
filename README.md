@@ -1,1 +1,2 @@
-# book-rest-api
+# book-rest
+Book-REST API service

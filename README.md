@@ -9,9 +9,9 @@ Book-REST API service
 
 3.To make testing easier, i implemented spring-rest docs for documentation and a PDF document which was generated based on the tests that where carried out can be found under the following folder: **/src/main/asciidoc/index.pdf**
 
-4. To run the application, one simply needs to download the project and import it into an IDE of choice and then run the program as a java application.
+4.To run the application, one simply needs to download the project and import it into an IDE of choice and then run the program as a java application.
 
-5. The application is available on port **8080** (default)
+5.The application is available on port **8080** (default)
 
-6. Alternatively the application can be run as a jar file. Path to the jar file: /src/main/jarfile
+6.Alternatively the application can be run as a jar file. Path to the jar file: /src/main/jarfile
 

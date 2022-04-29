@@ -13,5 +13,4 @@ Book-REST API service
 
 5.The application is available on port **8080** (default)
 
-6.Alternatively the application can be run as a jar file. Path to the jar file: /src/main/jarfile
 

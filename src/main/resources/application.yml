@@ -1,0 +1,27 @@
+server:
+    port: 4000
+
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: Kunashe23@
+        url: jdbc:mysql://localhost:3306/book_db
+        username: root
+    jpa:
+        generate-ddl: true
+        hibernate:
+            ddl-auto: create
+        show-sql: true
+
+narration:
+     book:
+        saved: Book was saved successfully!
+        notFound: The book category you entered is not present..Kindly add the category first to continue!
+        duplicate: It looks like the Book title you tried to add is already present!
+        notFoundBookInCategory: No books found in that category
+
+     category:
+       saved: Book Category created successfully
+       duplicate: Category creation was not successful. Perhaps it's already present!
+
+

@@ -1,0 +1,42 @@
+== BOOK REST-API ASSIGNMENT DOCUMENTATION BY SANDERS
+
+=== The following is for adding a category to the database:
+.curl request
+include::{snippets}/addCategoryTest/curl-request.adoc[]
+.http request
+include::{snippets}/addCategoryTest/http-request.adoc[]
+.response
+include::{snippets}/addCategoryTest/http-response.adoc[]
+
+=== The following is for adding a book
+.curl request
+include::{snippets}/addBookTest/curl-request.adoc[]
+.http request
+include::{snippets}/addBookTest/http-request.adoc[]
+.response
+include::{snippets}/addBookTest/http-response.adoc[]
+
+=== The following is for retrieving all books
+.curl request
+include::{snippets}/findAllBooksTest/curl-request.adoc[]
+.http request
+include::{snippets}/findAllBooksTest/http-request.adoc[]
+.response
+include::{snippets}/findAllBooksTest/http-response.adoc[]
+
+=== The following is for retrieving a book in a certain category
+.curl request
+include::{snippets}/findBookInACategory/curl-request.adoc[]
+.http request
+include::{snippets}/findBookInACategory/http-request.adoc[]
+.response
+include::{snippets}/findBookInACategory/http-response.adoc[]
+
+=== The following is for making a book purchase
+.curl request
+include::{snippets}/purchaseBook/curl-request.adoc[]
+.http request
+include::{snippets}/purchaseBook/http-request.adoc[]
+.response
+include::{snippets}/purchaseBook/http-response.adoc[]
+

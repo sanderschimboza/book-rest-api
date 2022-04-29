@@ -1,0 +1,8 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 89
+
+{"successful":true,"description":"Book Category created successfully","responseCode":201}
+----

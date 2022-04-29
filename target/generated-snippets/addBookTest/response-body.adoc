@@ -1,0 +1,4 @@
+[source,options="nowrap"]
+----
+{"successful":true,"description":"Book was saved successfully!","responseCode":201}
+----

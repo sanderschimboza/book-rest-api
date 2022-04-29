@@ -1,0 +1,8 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 146
+
+[{"id":2,"title":"A fairytale of Love and passion","description":"A Book by Jordan Sanderson","price":5978.0,"category":{"id":2,"title":"novel"}}]
+----

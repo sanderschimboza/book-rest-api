@@ -1,0 +1,31 @@
+server:
+    port: 8080
+
+spring:
+  datasource:
+    initialization-mode: always
+    username: sanders
+    url: jdbc:postgresql://localhost:5432/demodb
+    platform: postgres
+    password: Kunashe23@
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: 'true'
+    hibernate:
+      ddl-auto: create
+
+narration:
+     book:
+        saved: Book was saved successfully!
+        notFound: The book category you entered is not present..Kindly add the category first to continue!
+        duplicate: It looks like the Book title you tried to add is already present!
+        notFoundBookInCategory: No books found in that category
+
+     category:
+       saved: Book Category created successfully
+       duplicate: Category creation was not successful. Perhaps it's already present!
+
+

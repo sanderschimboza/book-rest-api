@@ -1,0 +1,8 @@
+[source,bash]
+----
+$ echo '{
+  "id" : 2,
+  "title" : "novel"
+}' | http POST 'http://localhost:8080/category' \
+    'Content-Type:application/json;charset=UTF-8'
+----

@@ -1,0 +1,15 @@
+[source,bash]
+----
+$ curl 'http://localhost:8080/book' -i -X POST \
+    -H 'Content-Type: application/json;charset=UTF-8' \
+    -d '{
+  "id" : 2,
+  "title" : "A fairytale of Love and passion",
+  "description" : "A Book by Jordan Sanderson",
+  "price" : 59.78,
+  "category" : {
+    "id" : 2,
+    "title" : null
+  }
+}'
+----

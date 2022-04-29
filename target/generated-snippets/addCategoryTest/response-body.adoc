@@ -1,0 +1,4 @@
+[source,options="nowrap"]
+----
+{"successful":true,"description":"Book Category created successfully","responseCode":201}
+----

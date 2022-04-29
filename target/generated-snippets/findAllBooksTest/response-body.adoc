@@ -1,0 +1,4 @@
+[source,options="nowrap"]
+----
+[{"id":2,"title":"A fairytale of Love and passion","description":"A Book by Jordan Sanderson","price":59.78,"category":{"id":2,"title":"novel"}},{"id":1,"title":"Mechanics","description":"A Level Mechanics by Stewart Michael's","price":20.59,"category":{"id":1,"title":"mathematics"}}]
+----

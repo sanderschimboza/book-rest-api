@@ -1,0 +1,8 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 204
+
+{"reference":"a7dd4530-a457-4539-9dcf-941bf05cdd36","updated":"2022-04-29T14:46:03.016+00:00","responseCode":"000","responseDescription":"Approved","debitReference":"aab2db13-216e-4b44-a828-8bbb8583bd38"}
+----

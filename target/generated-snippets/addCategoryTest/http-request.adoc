@@ -1,0 +1,12 @@
+[source,http,options="nowrap"]
+----
+POST /category HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Content-Length: 35
+Host: localhost:8080
+
+{
+  "id" : 2,
+  "title" : "novel"
+}
+----

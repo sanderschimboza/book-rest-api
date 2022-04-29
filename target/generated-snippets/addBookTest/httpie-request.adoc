@@ -1,0 +1,14 @@
+[source,bash]
+----
+$ echo '{
+  "id" : 2,
+  "title" : "A fairytale of Love and passion",
+  "description" : "A Book by Jordan Sanderson",
+  "price" : 59.78,
+  "category" : {
+    "id" : 2,
+    "title" : null
+  }
+}' | http POST 'http://localhost:8080/book' \
+    'Content-Type:application/json;charset=UTF-8'
+----

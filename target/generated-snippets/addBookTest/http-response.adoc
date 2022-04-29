@@ -1,0 +1,8 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 83
+
+{"successful":true,"description":"Book was saved successfully!","responseCode":201}
+----

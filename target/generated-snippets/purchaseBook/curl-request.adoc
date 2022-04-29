@@ -1,0 +1,20 @@
+[source,bash]
+----
+$ curl 'http://localhost:8080/transaction' -i -X POST \
+    -H 'Content-Type: application/json;charset=UTF-8' \
+    -d '{
+  "type" : "PURCHASE",
+  "extendedType" : "NONE",
+  "amount" : 59.78,
+  "created" : "2022-03-07T14:55:14.069+02:00",
+  "reference" : "be94c760-07af-42a8-9cd8-5134ce1e94d3",
+  "narration" : "Test Narration",
+  "additionalData" : {
+    "cardHolder" : "Sanders"
+  },
+  "card" : {
+    "id" : "1234560000000001",
+    "expiry" : "2022-10-09"
+  }
+}'
+----

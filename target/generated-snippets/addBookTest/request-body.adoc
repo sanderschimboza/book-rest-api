@@ -1,0 +1,13 @@
+[source,options="nowrap"]
+----
+{
+  "id" : 2,
+  "title" : "A fairytale of Love and passion",
+  "description" : "A Book by Jordan Sanderson",
+  "price" : 59.78,
+  "category" : {
+    "id" : 2,
+    "title" : null
+  }
+}
+----

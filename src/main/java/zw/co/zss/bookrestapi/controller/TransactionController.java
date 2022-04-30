@@ -34,7 +34,8 @@ public class TransactionController {
             return ResponseEntity.status(Constants.RESPONSE_CODE_OK)
                     .body(response);
         }
-        return ResponseEntity.status(404).body(ValidationResponse.builder()
+        return ResponseEntity.status(Constants.RESPONSE_CODE_NOT_FOUND)
+                .body(ValidationResponse.builder()
                 .description("An error occurred during connection to Client")
                 .successful(Boolean.FALSE)
                 .responseCode(Constants.RESPONSE_CODE_BAD_REQUEST)

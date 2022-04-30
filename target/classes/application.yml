@@ -3,10 +3,8 @@ server:
 
 spring:
   datasource:
-    initialization-mode: always
     username: sanders
-    url: jdbc:postgresql://localhost:5432/demodb
-    platform: postgres
+    url: jdbc:postgresql://localhost:5432/bookdb
     password: Kunashe23@
   jpa:
     properties:
@@ -16,6 +14,10 @@ spring:
             non_contextual_creation: 'true'
     hibernate:
       ddl-auto: create
+  sql:
+    init:
+      mode: always
+      platform: postgres
 
 narration:
      book:

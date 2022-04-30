@@ -31,6 +31,7 @@ public class CategoryServiceImpl implements CategoryService {
         this.repository.save(category);
         return Constants.STATUS_SUCCESS;
     }
+
     @Override
     public List<Category> findAllCategories() {
         return this.repository.findAll(Sort.by(Sort.Direction.ASC, "id"));

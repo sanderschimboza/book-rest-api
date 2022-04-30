@@ -2,13 +2,13 @@ package zw.co.zss.bookrestapi.service.impl;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
-import zw.co.zss.bookrestapi.model.Card;
 import zw.co.zss.bookrestapi.model.Transaction;
 import zw.co.zss.bookrestapi.model.TransactionResponse;
 import zw.co.zss.bookrestapi.repository.TransactionRepository;
@@ -27,19 +27,11 @@ public class TransactionServiceImpl implements TransactionService {
     @Override
     public TransactionResponse doPostTransaction(Transaction transaction) {
 
-        Transaction tran = Transaction.builder()
-                .type(transaction.getType())
-                .extendedType(transaction.getExtendedType())
-                .amount(transaction.getAmount())
-                .created((transaction.getCreated()))
-                .card(Card.builder()
-                        .id(transaction.getCard().getId())
-                        .expiry(transaction.getCard().getExpiry())
-                        .build())
-                .narration(transaction.getNarration())
-                .reference(UUID.randomUUID().toString())
-                .additionalData(transaction.getAdditionalData())
-                .build();
+        Transaction tran = Transaction.builder().build();
+        BeanUtils.copyProperties(transaction, tran);
+        tran.setReference(UUID.randomUUID().toString());
+
+        log.info("Posting Transaction::: {}", tran);
 
         return postPayment(tran);
     }

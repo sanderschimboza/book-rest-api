@@ -38,7 +38,7 @@ public class BookServiceImpl implements BookRestService {
 
         } else {
             Book book = Book.builder()
-                    .price(b.getPrice() * 100)
+                    .price(b.getPrice() * 100) //store amount in cents
                     .category(categoryId)
                     .title(b.getTitle())
                     .description(b.getDescription())
@@ -55,7 +55,7 @@ public class BookServiceImpl implements BookRestService {
         List<Book> bookList = repository.findAll(Sort.by(Sort.Direction.ASC, "title"));
 
         for (Book book : bookList) {
-            book.setPrice(book.getPrice() / 100);
+            book.setPrice(book.getPrice() / 100); //return amount in $'s
         }
         return bookList;
     }

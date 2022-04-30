@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "narration.book.saved",
+      "type": "java.lang.String",
+      "description": "Book created successfully."
+  }
+] }

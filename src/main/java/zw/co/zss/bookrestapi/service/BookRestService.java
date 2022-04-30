@@ -11,5 +11,4 @@ public interface BookRestService {
     List<Book> findAllBooks();
 
     List<Book> findBooksByCategory(Long id);
-
 }

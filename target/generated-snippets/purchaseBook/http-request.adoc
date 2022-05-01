@@ -10,7 +10,7 @@ Host: localhost:8080
   "extendedType" : "NONE",
   "amount" : 59.78,
   "created" : "2022-03-07T14:55:14.069+02:00",
-  "reference" : "be94c760-07af-42a8-9cd8-5134ce1e94d3",
+  "reference" : "4bb4b0d5-221b-4fd1-ad7f-c55e66816f24",
   "narration" : "Test Narration",
   "additionalData" : {
     "cardHolder" : "Sanders"

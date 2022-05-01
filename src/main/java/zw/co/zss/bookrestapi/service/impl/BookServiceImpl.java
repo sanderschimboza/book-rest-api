@@ -1,5 +1,6 @@
 package zw.co.zss.bookrestapi.service.impl;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import zw.co.zss.bookrestapi.model.Book;
@@ -11,8 +12,10 @@ import zw.co.zss.bookrestapi.utils.Constants;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Consumer;
 
 @Service
+@Slf4j
 public class BookServiceImpl implements BookRestService {
 
     private final BookRepository repository;
@@ -51,18 +54,15 @@ public class BookServiceImpl implements BookRestService {
 
     @Override
     public List<Book> findAllBooks() {
-
         List<Book> bookList = repository.findAll(Sort.by(Sort.Direction.ASC, "title"));
-
-        for (Book book : bookList) {
-            book.setPrice(book.getPrice() / 100); //return amount in $'s
-        }
+        Consumer<Book> bookPriceMapper = b -> b.setPrice(b.getPrice() / 100);
+        bookList.stream().parallel().forEach(bookPriceMapper);
         return bookList;
     }
 
     @Override
     public List<Book> findBooksByCategory(Long id) {
-       return this.repository.findBooksByCategoryId(id);
+        return this.repository.findBooksByCategoryId(id);
     }
 
     private Category findCategory(Long categoryId) {

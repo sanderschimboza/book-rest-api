@@ -60,7 +60,7 @@ public class BookController {
 
     @GetMapping
     public ResponseEntity<List<Book>> findAllBooks() {
-        return ResponseEntity.ok(this.service.findAllBooks());
+        return ResponseEntity.ok().body(this.service.findAllBooks());
     }
 
     @GetMapping("/{id}")

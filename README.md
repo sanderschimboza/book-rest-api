@@ -13,4 +13,6 @@ Book-REST API service
 
 5.The application is available on port **8080** (default)
 
+6.The databse authentication details (username & password) will have to be changed to match that of the hosting server or env
+
 
